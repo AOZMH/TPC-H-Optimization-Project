@@ -14,7 +14,7 @@ Load data using Python APIs:
 SQL-Server-styled TPC-H queries:
 > Execute all_tpch_queries.sql in SQL Server
 
-## Optimizatiion codes
+## Optimization codes
 All included in **per_query_optization/** directory.
 
 The optimization of each query grouped into a .sql file, utilizing techniques including **indices, table partition & indexed views**.
