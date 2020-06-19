@@ -1,5 +1,5 @@
 # TPC-H-Optimization-Project
-Lab project of 2020 sprint Intro2DB course
+Lab project of 2020 sprint Intro2Database course.
 
 ## Lab Report (still developing)
 性能调优报告_1700017815_张旻昊_1700017802_耿思博_1700017828_胡时京.docx
@@ -7,8 +7,10 @@ Lab project of 2020 sprint Intro2DB course
 ## Data preparation
 Create all tables:
 > create_tables.sql 
+
 Load data using Python APIs:
 > load_data.py
+
 SQL-Server-styled TPC-H queries:
 >all_tpch_queries.sql
 
