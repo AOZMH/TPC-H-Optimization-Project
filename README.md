@@ -16,5 +16,7 @@ SQL-Server-styled TPC-H queries:
 
 ## Optimizatiion codes
 All included in **per_query_optization/** directory.
+
 The optimization of each query grouped into a .sql file, utilizing techniques including **indices, table partition & indexed views**.
+
 Add_group.sql performs the operations to add file groups for partitioned data to be saved.
