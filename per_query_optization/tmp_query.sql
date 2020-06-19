@@ -196,6 +196,22 @@ drop index if exists ix5 on dbo.query5;
 create unique clustered index ix5
 on dbo.query5( N_NAME );
 
+
+drop view if exists dbo.query5_2;
+create view dbo.query5_2
+with schemabinding
+as
+	SELECT N_NAME, L_EXTENDEDPRICE, L_DISCOUNT, O_ORDERDATE, R_NAME
+	FROM dbo.CUSTOMER, dbo.ORDERS, dbo.LINEITEM, dbo.SUPPLIER, dbo.NATION, dbo.REGION
+	WHERE C_CUSTKEY = O_CUSTKEY AND L_ORDERKEY = O_ORDERKEY AND L_SUPPKEY = S_SUPPKEY
+	AND C_NATIONKEY = S_NATIONKEY AND S_NATIONKEY = N_NATIONKEY AND N_REGIONKEY = R_REGIONKEY
+;
+
+drop index if exists ix1 on dbo.query5_2;
+create unique clustered index ix1
+on dbo.query5_2( N_NAME, O_ORDERDATE, L_EXTENDEDPRICE );
+
+
 dbcc dropcleanbuffers
 dbcc freeproccache
 
