@@ -6,13 +6,13 @@ Lab project of 2020 sprint Intro2Database course.
 
 ## Data preparation
 Create all tables:
-> create_tables.sql 
+> Execute create_tables.sql in SQL Server
 
 Load data using Python APIs:
-> load_data.py
+> python load_data.py
 
 SQL-Server-styled TPC-H queries:
->all_tpch_queries.sql
+> Execute all_tpch_queries.sql in SQL Server
 
 ## Optimizatiion codes
 All included in **per_query_optization/** directory.
